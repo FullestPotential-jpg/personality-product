@@ -434,12 +434,12 @@
         let selectedPersonalityType = 'творческий';
 
         // ФУНКЦИИ СТРАНИЦЫ ПРОДУКТА
-        function selectPersonalityType(type, event) {
-    selectedPersonalityType = type;
-    document.querySelectorAll('.personality-type-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
-    loadModuleContent(1);
-}
+                function selectPersonalityType(type, event) {
+            selectedPersonalityType = type;
+            document.querySelectorAll('.personality-type-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            loadModuleContent(1);
+        }
 
         function showModule(moduleNumber, event) {
             document.querySelectorAll('.module-nav-btn').forEach(btn => btn.classList.remove('active'));
