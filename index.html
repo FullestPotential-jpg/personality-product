@@ -1854,5 +1854,24 @@
             loadModuleContent(1); // Загружаем контент первого модуля по умолчанию
         });
     </script>
+    <script>
+// ТЕСТ ФУНКЦИЙ
+console.log('=== ТЕСТ ФУНКЦИЙ ===');
+console.log('selectPersonalityType:', typeof selectPersonalityType);
+console.log('showModule:', typeof showModule);
+console.log('toggleSubmodule:', typeof toggleSubmodule);
+
+// ПРОСТОЙ ТЕСТ
+function simpleTest() {
+    alert('Простая функция работает!');
+    console.log('Простая функция вызвана');
+}
+</script>
+
+<!-- ТЕСТОВАЯ КНОПКА -->
+<div style="position: fixed; top: 10px; right: 10px; background: green; color: white; padding: 10px;">
+    <button onclick="simpleTest()">ТЕСТ 1</button>
+    <button onclick="selectPersonalityType('творческий')">ТЕСТ 2</button>
+</div>
 </body>
 </html>
